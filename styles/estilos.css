@@ -1,0 +1,399 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+/* Estilos Generales
+----------------------------------------------------------------------------------------------------*/
+body{
+	background: transparent url(../images/bg-sprite.png) repeat;
+}
+
+html,body{
+height:100%;
+}
+
+*{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div{
+	display: block;
+}
+
+.container_12:after, .container_12:before {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.container_12:after{
+	clear: both;
+}
+
+.wrapper{
+	background: transparent url(../images/bg-wrapper.jpg) repeat-x;
+	background-position: center top;
+	height: auto;
+	min-height:100%;
+	padding-bottom: 91px
+}
+
+.logo{
+	float: left;
+	background: transparent url(../images/logo-didactica.png) no-repeat;
+	display: block;
+	width: 291px;
+	height: 77px;
+	margin-top: 10px;
+}
+
+.nav-menu{
+	height: 66px;
+	width: 615px;
+	background: transparent url(../images/bg-menu.png) no-repeat;
+	display: block;
+	float: right;
+}
+
+.menu-prov{
+	height: 22px;
+	width: 542px;
+	background: transparent url(../images/menu-provisional.png) no-repeat;
+	display: block;
+	margin-top: 15px;
+	margin-left: 40px;
+}
+
+.main-content{
+	position: relative;
+}
+
+p{
+	color: #FFFFFF;
+	line-height: normal;
+    font-size: 14px;
+    
+}
+
+/* Botones
+----------------------------------------------------------------------------------------------------*/
+.info-btn-azul{
+	background: transparent url(../images/info-btn-azul.png) no-repeat;
+	width: 150px;
+	height: 15px;
+	display: block;
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+	float: right;
+	margin-right: 35px;
+}
+.info-btn-azul:hover{
+	filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+.btn-destinos{
+	background: transparent url(../images/btn-destinos.png) no-repeat;
+	width: 190px;
+	height: 45px;
+	display: block;
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+}
+.btn-destinos:hover{
+	filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+.btn-info{
+	background: transparent url(../images/info-btn.png) no-repeat;
+	width: 190px;
+	height: 45px;
+	display: block;
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+}
+.btn-info:hover{
+	filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+/* Inicio
+----------------------------------------------------------------------------------------------------*/
+.top-title{
+	background: transparent url(../images/top-titulo.png) no-repeat;
+	width: 598px;
+	height: 78px;
+	background-position: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.inicio-contenido{
+	min-height: 680px;
+}
+
+.inicio-banner-images{
+    background: transparent url(../images/bg-banner.png) no-repeat;
+    width: 683px;
+    height: 324px;
+    position: absolute;
+    left: -35px;
+}
+
+.inicio-banner-sup-der{
+    background: transparent url(../images/home-derecha-top.png) no-repeat;
+    width: 454px;
+    height: 630px;
+    position: absolute;
+    right: -80px;
+}
+
+.inicio-banner-sup-der >div{
+	width: 362px;
+	top: 380px;
+	position: relative;
+}
+
+.inicio-banner-sup-der >div p{
+	padding: 10px 50px;
+	color: #2B3941;
+	text-align: center;
+	font-size: 16px;
+}
+.inicio-bus{
+    background: transparent url(../images/home-camion.png) no-repeat;
+    width: 400px;
+    height: 248px;
+    position: absolute;
+    top: 530px;
+    right: -10px;
+}
+
+.inicio-objetivos{
+	position: absolute;
+	top: 333px;
+	left: 0px;
+	width: 585px;
+	height: 280px;
+}
+
+.titulo-objetivos{
+	background: transparent url(../images/objetivos-titulo.png) no-repeat;
+	width: 309px;
+	height: 103px;
+	position: absolute;
+}
+
+.medalla-objetivos{
+	background: transparent url(../images/home-medalla1.png) no-repeat;
+	width: 210px;
+	height: 190px;
+	position: absolute;
+	z-index: 1;
+	right: -40px;
+	top: -60px;
+}
+
+.objetivos-contenido{
+    position: relative;
+    top: 130px;
+}
+
+.objetivos-contenido >div{
+    width: 33.3%;
+    float: left;
+    height: 170px;
+    background: transparent url(../images/objetivos-titulos-div.png) no-repeat left center;
+}
+
+.objetivos-contenido >div:first-child{
+    background: none;
+}
+
+.objetivos-contenido div span{
+    display: block;
+}
+
+.objetivo-aprendizaje{
+   	background: transparent url(../images/objetivos-titulos.png) no-repeat 0px 7px;
+    width: 188px;
+    height: 40px;
+    margin: auto;
+}
+.objetivo-diversion{
+   	background: transparent url(../images/objetivos-titulos.png) no-repeat 0px -40px;
+    width: 142px;
+    height: 40px;
+    margin: auto;
+}
+.objetivo-seguridad{
+   	background: transparent url(../images/objetivos-titulos.png) no-repeat 0px -85px;
+    width: 148px;
+    height: 40px;
+    margin: auto;
+}
+.icono-diversion{
+   	background: transparent url(../images/icono-diversion.png) no-repeat;
+    width: 90px;
+    height: 88px;
+    margin: 20px auto;
+}
+.icono-aprendizaje{
+   	background: transparent url(../images/icono-aprendizaje.png) no-repeat;
+    width: 90px;
+    height: 88px;
+    margin: 20px auto;
+}
+.icono-seguridad{
+   	background: transparent url(../images/icono-seguridad.png) no-repeat;
+    width: 90px;
+    height: 88px;
+    margin: 20px auto;
+}
+
+.inicio-destinos{
+	position: relative;
+	margin-bottom: 15px
+}
+
+.destinos-titulo{
+	background: transparent url(../images/inicio-destinos-titulo.png) no-repeat;
+	width: 268px;
+	height: 27px;
+	display: block;
+}
+
+.destinos-maletas{
+	background: transparent url(../images/inicio-destinos-maletas.png) no-repeat;
+	width: 199px;
+	height: 173px;
+	float: left;
+}
+
+.destinos-contenido{
+	float: left;
+	width: 330px;
+}
+.destinos-contenido p{
+	margin-top: 10px;
+}
+.destinos-contenido p strong{
+	font-size: 16px;
+}
+
+.destinos-contenido span{
+	font-size: 18px;
+	color: #FFFFFF;
+	line-height: normal;
+}
+.btn-destinos{
+	margin-left: 70px;
+	margin-top: 20px;
+}
+.inicio-respons-contenido, .inicio-experiencia-contenido, .inicio-padres-contenido{
+	min-height: 190px;
+}
+.inicio-respons-contenido .titulo{
+	background: transparent url(../images/inicio-titulos.png) no-repeat 0 -42px;
+	width: 217px;
+	height: 40px;
+    margin-bottom: 10px;
+}
+.inicio-respons-contenido a{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inicio-experiencia-contenido .titulo{
+	background: transparent url(../images/inicio-titulos.png) no-repeat 0 -97px;
+	width: 257px;
+	height: 40px;
+    margin-bottom: 10px;
+}
+.inicio-experiencia-contenido span{
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 14px;
+}
+.inicio-experiencia-contenido ul li{
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.inicio-experiencia-contenido a{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iconos-redes{
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.iconos-redes span{
+    display: block;
+    width: 47px;
+    height: 47px;
+    float: left;
+    margin-left: 20px;
+}
+.iconos-redes span:first-child{
+    margin-left: 60px;
+}
+.iconos-redes .icono-facebook{
+    background: transparent url(../images/inicio-redes-iconos.png) no-repeat 0 0px;
+}
+.iconos-redes .icono-twitter{
+    background: transparent url(../images/inicio-redes-iconos.png) no-repeat -67px 0px;
+}
+.iconos-redes .icono-youtube{
+    background: transparent url(../images/inicio-redes-iconos.png) no-repeat -126px 0px ;
+}
+.inicio-padres-contenido .titulo{
+    background: transparent url(../images/inicio-titulos.png) no-repeat -310px -90px;
+    width: 253px;
+    height: 53px;
+    clear: both;
+    margin: auto;
+    margin: 10px auto 5px auto;
+}
+.padres-redes{
+    background: transparent url(../images/inicio-padres-redes.png) no-repeat;
+    width: 166px;
+    height: 120px;
+    position: relative;
+    top: -10px;
+    margin: auto;
+}
+.inicio-padres-contenido a{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -13px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer
+----------------------------------------------------------------------------------------------------*/
+.footer{
+	width: 972px;
+	height: 91px;
+	background: transparent url(../images/bg-footer.png) no-repeat;
+	display: block;
+	margin-top: -91px;
+}
+.footer-content{
+    padding: 30px;
+    color: #2B3941;
+}
