@@ -188,7 +188,7 @@ p{
 }
 
 .titulo-objetivos{
-	background: transparent url(../images/objetivos-titulo.png) no-repeat;
+	background: transparent url(../images/inicio-titulos.png) no-repeat 0px 0px;
 	width: 309px;
 	height: 103px;
 	position: absolute;
@@ -267,7 +267,7 @@ p{
 }
 
 .destinos-titulo{
-	background: transparent url(../images/inicio-destinos-titulo.png) no-repeat;
+	background: transparent url(../images/inicio-titulos.png) no-repeat 0 -134px;
 	width: 268px;
 	height: 27px;
 	display: block;
@@ -304,7 +304,7 @@ p{
 	min-height: 190px;
 }
 .inicio-respons-contenido .titulo{
-	background: transparent url(../images/inicio-titulos.png) no-repeat 0 -42px;
+	background: transparent url(../images/inicio-titulos.png) no-repeat 0 -173px;
 	width: 217px;
 	height: 40px;
     margin-bottom: 10px;
@@ -315,7 +315,7 @@ p{
 }
 
 .inicio-experiencia-contenido .titulo{
-	background: transparent url(../images/inicio-titulos.png) no-repeat 0 -97px;
+	background: transparent url(../images/inicio-titulos.png) no-repeat 0 -228px;
 	width: 257px;
 	height: 40px;
     margin-bottom: 10px;
@@ -361,7 +361,7 @@ p{
     background: transparent url(../images/inicio-redes-iconos.png) no-repeat -126px 0px ;
 }
 .inicio-padres-contenido .titulo{
-    background: transparent url(../images/inicio-titulos.png) no-repeat -310px -90px;
+    background: transparent url(../images/inicio-titulos.png) no-repeat -358px -10px;
     width: 253px;
     height: 53px;
     clear: both;
@@ -382,6 +382,47 @@ p{
     margin-top: -13px;
     position: relative;
     z-index: 1;
+}
+
+.inicio-banner-medio{
+	margin-top: 0px;
+}
+.inicio-banner-medio .titulo{
+	background: transparent url(../images/inicio-titulos.png) no-repeat -365px -93px;
+	width: 436px;
+	height: 82px;
+	float: left;
+	position: relative;
+	top: 100px;
+}
+.inicio-banner-medio .banner-img{
+	background: transparent url(../images/banner-medio.png) no-repeat;
+	width: 443px;
+	height: 411px;
+	float: right;
+}
+
+.inicio-unidades{
+	margin-top: -150px;
+}
+.inicio-unidades .mapa{
+	background: transparent url(../images/mapa.png) no-repeat;
+	width: 269px;
+	height: 174px;
+	display: block;
+	position: relative;
+}
+.inicio-unidades .titulo{
+	background: transparent url(../images/inicio-titulos.png) no-repeat -345px -201px;
+	width: 405px;
+	height: 91px;
+	display: block;
+	position: relative;
+	margin-top: -155px;
+	left: 220px;
+}
+inicio-unidades-contenido{
+	margin-top: 40px;
 }
 
 /* Footer
