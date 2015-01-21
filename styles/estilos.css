@@ -474,7 +474,7 @@ p{
 }
 
 .inicio-unidades{
-	margin-top: -150px;
+	margin-top: -160px;
 }
 .inicio-unidades .mapa{
 	background: transparent url(../images/mapa.png) no-repeat;
@@ -489,12 +489,171 @@ p{
 	height: 91px;
 	display: block;
 	position: relative;
-	margin-top: -155px;
-	left: 220px;
+	margin-top: -135px;
+	left: 240px;
 }
-inicio-unidades-contenido{
-	margin-top: 40px;
+.inicio-unidades-contenido{
+	margin-top: 50px;
 }
+.inicio-unidades-contenido .unidades-general, .inicio-unidades-contenido .unidades-mapa{
+	float: left;	
+}
+.inicio-unidades-contenido .unidades-general{
+	width: 400px;
+}
+.inicio-unidades-contenido .unidades-mapa{
+	width: 500px;
+}
+.inicio-unidades-contenido .unidades-menu li{
+	display: inline-block;
+}
+
+.inicio-unidades-contenido .unidades-info{
+	background: transparent url(../images/bg-unidades-info.png) no-repeat;
+	width: 341px;
+	height: 216px;
+	display: block;
+}
+
+/* Mapa
+----------------------------------------------------------------------------------------------------*/
+ul#mapa { 
+  list-style-type : none;
+  position : relative;
+  display : block;
+  background : transparent url(../images/mapa-mexico.png) no-repeat 0 0;
+  width : 350px;
+  height : 250px;
+  border : none;
+  margin : 0 auto 0;
+  padding : 0;
+}
+
+ul#mapa li { 
+  display : inline;
+}
+
+ul#mapa li a {
+  position : relative;
+  display : block;
+  text-decoration : none;
+}
+
+ul#mapa li a span.offset { 
+  margin-top : -9000px; 
+  margin-left : -9000px;
+  position : absolute;
+}
+
+ul#mapa li a:hover span.offset, ul#mapa li a:focus span.offset, ul#mapa li a:active span.offset {
+  color : #000;
+  background-image : none;
+  background-color : #ffffde;
+  border : 1px solid #000;
+  display : block;
+  width : 150px;
+  height : auto;
+  text-decoration : none;
+  cursor : pointer;
+}
+
+ul#mapa li a:hover span.offset span, ul#mapa li a:focus span.offset span, ul#mapa li a:active span.offset span {
+  display : block;
+  width : 140px;
+  margin : 5px;
+}
+
+
+/* hot-spot 01 css */
+
+ul#mapa li a#cmp01 {
+  width : 80px;
+  height : 60px;
+  margin-top : 0;
+  margin-left : 130px;
+}
+
+ul#mapa li a#cmp01:hover, ul#mapa li a#cmp01:focus, ul#mapa li a#cmp01:active {
+  background : transparent url(images/cmp_flat_on.jpg) no-repeat -130px 0px;
+}
+
+ul#mapa li a#cmp01:hover span.offset, ul#mapa li a#cmp01:focus span.offset, ul#mapa li a#cmp01:active span.offset {
+  margin-top : -1px;
+  margin-left : 230px;
+}
+
+/* hot-spot 02 css */
+
+ul#mapa li a#cmp02 {
+  width : 110px;
+  height : 75px;
+  margin-top : -50px;
+  margin-left : 235px;
+}
+
+ul#mapa li a#cmp02:hover, ul#mapa li a#cmp02:focus, ul#mapa li a#cmp02:active {
+  background : transparent url(images/cmp_flat_on.jpg) no-repeat -235px -10px;
+}
+
+ul#mapa li a#cmp02:hover span.offset, ul#mapa li a#cmp02:focus span.offset, ul#mapa li a#cmp02:active span.offset {
+  margin-top : -11px;
+  margin-left : 125px;
+}
+
+/* hot-spot 03 css */
+
+ul#mapa li a#cmp03 {
+  width : 75px;
+  height : 95px;
+  margin-top : 3px;
+  margin-left : 115px;
+}
+
+ul#mapa li a#cmp03:hover, ul#mapa li a#cmp03:focus, ul#mapa li a#cmp03:active {
+  background : transparent url(images/cmp_flat_on.jpg) no-repeat -115px -88px;
+}
+
+ul#mapa li a#cmp03:hover span.offset, ul#mapa li a#cmp03:focus span.offset, ul#mapa li a#cmp03:active span.offset {
+  margin-top : -89px;
+  margin-left : 245px;
+}
+
+/* hot-spot 04 css */
+
+ul#mapa li a#cmp04 {
+  width : 110px;
+  height : 120px;
+  margin-top : -60px;
+  margin-left : 5px;
+}
+
+ul#mapa li a#cmp04:hover, ul#mapa li a#cmp04:focus, ul#mapa li a#cmp04:active {
+  background : transparent url(images/cmp_flat_on.jpg) no-repeat -5px -123px;
+}
+
+ul#mapa li a#cmp04:hover span.offset, ul#mapa li a#cmp04:focus span.offset, ul#mapa li a#mapa04:active span.offset {
+  margin-top : -124px;
+  margin-left : 355px;
+}
+
+/* hot-spot 05 css */
+
+ul#mapa li a#cmp05 {
+  width : 95px;
+  height : 97px;
+  margin-top : -90px;
+  margin-left : 240px;
+}
+
+ul#mapa li a#cmp05:hover, ul#mapa li a#cmp05:focus, ul#mapa li a#cmp05:active {
+  background : transparent url(images/cmp_flat_on.jpg) no-repeat -240px -153px;
+}
+
+ul#mapa li a#cmp05:hover span.offset, ul#mapa li a#cmp05:focus span.offset, ul#mapa li a#cmp05:active span.offset {
+  margin-top : -154px;
+  margin-left : 120px;
+}
+
 
 /* Footer
 ----------------------------------------------------------------------------------------------------*/
