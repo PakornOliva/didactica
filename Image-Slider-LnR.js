@@ -1,36 +1,64 @@
-//1. set ul width 
-//2. image when click prev/next button
 var ul;
-var li_items;
-var imageNumber;
-var imageWidth;
-var prev, next;
-var currentPostion = 0;
-var currentImage = 0;
-
-
-function init(){
+var li_items; 
+var li_number;
+var image_number = 0;
+var slider_width = 0;
+var image_width;
+var current = 0;
+function init(){	
 	ul = document.getElementById('image_slider');
 	li_items = ul.children;
-	imageNumber = li_items.length;
-	imageWidth = li_items[0].children[0].clientWidth;
-	ul.style.width = parseInt(imageWidth * imageNumber) + 'px';
-	prev = document.getElementById("prev");
-	next = document.getElementById("next");
-	//.onclike = slide(-1) will be fired when onload;
-	/*
-	prev.onclick = function(){slide(-1);};
-	next.onclick = function(){slide(1);};*/
-	prev.onclick = function(){ onClickPrev();};
-	next.onclick = function(){ onClickNext();};
+	li_number = li_items.length;
+	for (i = 0; i < li_number; i++){
+		// nodeType == 1 means the node is an element.
+		// in this way it's a cross-browser way.
+		//if (li_items[i].nodeType == 1){
+			//clietWidth and width???
+			image_width = li_items[i].childNodes[0].clientWidth;
+			slider_width += image_width;
+			image_number++;
+	}
+	
+	ul.style.width = parseInt(slider_width) + 'px';
+	slider(ul);
 }
 
+function slider(){		
+		animate({
+			delay:17,
+			duration: 6000,
+			delta:function(p){return Math.max(0, -1 + 2 * p)},
+			step:function(delta){
+					ul.style.left = '-' + parseInt(current * image_width + delta * image_width) + 'px';
+				},
+			callback:function(){
+				current++;
+				if(current < li_number-1){
+					slider();
+				}
+				else{
+					var left = (li_number - 1) * image_width;					
+					setTimeout(function(){goBack(left)},5000); 				
+					setTimeout(slider, 10000);
+				}
+			}
+		});
+}
+function goBack(left_limits){
+	current = 0;	
+	setInterval(function(){
+		if(left_limits >= 0){
+			ul.style.left = '-' + parseInt(left_limits) + 'px';
+			left_limits -= image_width / 10;
+		}	
+	}, 17);
+}
 function animate(opts){
 	var start = new Date;
 	var id = setInterval(function(){
 		var timePassed = new Date - start;
-		var progress = timePassed / opts.duration;
-		if (progress > 1){
+		var progress = timePassed / opts.duration
+		if(progress > 1){
 			progress = 1;
 		}
 		var delta = opts.delta(progress);
@@ -39,44 +67,6 @@ function animate(opts){
 			clearInterval(id);
 			opts.callback();
 		}
-	}, opts.delay || 17);
-	//return id;
+	}, opts.dalay || 17);
 }
-
-function slideTo(imageToGo){
-	var direction;
-	var numOfImageToGo = Math.abs(imageToGo - currentImage);
-	// slide toward left
-
-	direction = currentImage > imageToGo ? 1 : -1;
-	currentPostion = -1 * currentImage * imageWidth;
-	var opts = {
-		duration:1000,
-		delta:function(p){return p;},
-		step:function(delta){
-			ul.style.left = parseInt(currentPostion + direction * delta * imageWidth * numOfImageToGo) + 'px';
-		},
-		callback:function(){currentImage = imageToGo;}	
-	};
-	animate(opts);
-}
-
-function onClickPrev(){
-	if (currentImage == 0){
-		slideTo(imageNumber - 1);
-	} 		
-	else{
-		slideTo(currentImage - 1);
-	}		
-}
-
-function onClickNext(){
-	if (currentImage == imageNumber - 1){
-		slideTo(0);
-	}		
-	else{
-		slideTo(currentImage + 1);
-	}		
-}
-
 window.onload = init;
