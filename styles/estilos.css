@@ -276,7 +276,7 @@ p{
     background: none;
 }
 
-.objetivos-contenido div span{
+.objetivos-contenido div a{
     display: block;
 }
 
@@ -304,26 +304,42 @@ p{
     width: 90px;
     height: 88px;
     margin: 20px auto;
+  
+    -webkit-transition-property: opacity, -moz-transform;
+    -webkit-transition-duration: .3s, .2s;
+    -moz-transition-property: opacity, -webkit-transform;
+    -moz-transition-duration: .3s, .2s; 
+    -o-transition-property: opacity, -o-transform;
+    -o-transition-duration: .3s, .2s; 
+    transition-property: opacity, transform;	
+    transition-duration: .3s, .2s;
+}
+.icono-diversion:hover{
+  	-moz-transform: scale(1.1);
+ 	-webkit-transform: scale(1.1);
+ 	-o-transform: scale(1.1);
+ 	transform: scale(1.1);
+	opacity: .8;
 }
 .icono-aprendizaje{
    	background: transparent url(../images/icono-aprendizaje.png) no-repeat;
     width: 90px;
     height: 88px;
     margin: 20px auto;
-		-webkit-transition-property: opacity, -moz-transform;
-		-webkit-transition-duration: .3s, .2s;
-   	-moz-transition-property: opacity, -webkit-transform;
-		-moz-transition-duration: .3s, .2s; 
-   	-o-transition-property: opacity, -o-transform;
-		-o-transition-duration: .3s, .2s; 
+    -webkit-transition-property: opacity, -moz-transform;
+    -webkit-transition-duration: .3s, .2s;
+    -moz-transition-property: opacity, -webkit-transform;
+    -moz-transition-duration: .3s, .2s; 
+    -o-transition-property: opacity, -o-transform;
+    -o-transition-duration: .3s, .2s; 
     transition-property: opacity, transform;	
-		transition-duration: .3s, .2s;
+    transition-duration: .3s, .2s;
 }
 .icono-aprendizaje:hover{
-	-moz-transform: scale(1.2);
- 	-webkit-transform: scale(1.2);
- 	-o-transform: scale(1.2);
- 	transform: scale(1.2);
+	-moz-transform: scale(1.1);
+ 	-webkit-transform: scale(1.1);
+ 	-o-transform: scale(1.1);
+ 	transform: scale(1.1);
 	opacity: .8;
 }
 .icono-seguridad{
@@ -331,6 +347,22 @@ p{
     width: 90px;
     height: 88px;
     margin: 20px auto;
+  
+    -webkit-transition-property: opacity, -moz-transform;
+    -webkit-transition-duration: .3s, .2s;
+    -moz-transition-property: opacity, -webkit-transform;
+    -moz-transition-duration: .3s, .2s; 
+    -o-transition-property: opacity, -o-transform;
+    -o-transition-duration: .3s, .2s; 
+    transition-property: opacity, transform;	
+    transition-duration: .3s, .2s;
+}
+.icono-seguridad:hover{
+  	-moz-transform: scale(1.1);
+ 	-webkit-transform: scale(1.1);
+ 	-o-transform: scale(1.1);
+ 	transform: scale(1.1);
+	opacity: .8;
 }
 
 .inicio-destinos{
@@ -469,8 +501,8 @@ p{
 }
 .inicio-banner-medio .banner-img{
 	background: transparent url(../images/banner-medio.png) no-repeat;
-	width: 443px;
-	height: 411px;
+    width: 463px;
+    height: 411px;
 	float: right;
 }
 
@@ -513,6 +545,11 @@ p{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
+  padding: 75px;
+text-align: center;
+line-height: normal;
+font-size: 14px;
+color: rgb(180, 181, 182);
 }
 
 .inicio-unidades-contenido .unidades-menu li{
@@ -577,45 +614,70 @@ p{
 }
 
 .unidades-mapa .unidad-info-container{
-	
+  padding: 10px;
 }
 .unidad-info-container .tit-aguascalientes{
-	background: transparent url(../images/unidades-didactica.png) no-repeat 0px -141px;
-	width: 200px;
-	height: 34px;
-	display: block;
+  background: transparent url(../images/unidades-didactica.png) no-repeat 0px -141px;
+  width: 200px;
+  height: 34px;
+  display: block;
+  margin: auto;
 }
 .unidad-info-container .tit-toluca{
 	background: transparent url(../images/unidades-didactica.png) no-repeat 0px -178px;
 	width: 200px;
 	height: 34px;
 	display: block;
+  margin: auto;
 }
 .unidad-info-container .tit-hidalgo{
 	background: transparent url(../images/unidades-didactica.png) no-repeat 0px -218px;
 	width: 200px;
 	height: 34px;
 	display: block;
+  margin: auto;
 }
 .unidad-info-container .tit-df{
 	background: transparent url(../images/unidades-didactica.png) no-repeat 0px -258px;
 	width: 200px;
 	height: 34px;
 	display: block;
+  margin: auto;
 }
 .unidad-info-container .tit-queretaro{
 	background: transparent url(../images/unidades-didactica.png) no-repeat 0px -298px;
 	width: 200px;
 	height: 34px;
 	display: block;
+  margin: auto;
 }
 .unidad-info-container .tit-puebla{
 	background: transparent url(../images/unidades-didactica.png) no-repeat 0px -338px;
 	width: 200px;
 	height: 34px;
 	display: block;
+  margin: auto;
+}
+.unidad-info-container .btn-info{
+  cursor: pointer;
+  margin: auto;
 }
 
+.unidad-info{
+  min-height: 70px;
+  display: block;
+  margin-top: 10px;
+}
+.unidad-info span{
+  margin-bottom: 5px;
+}
+.unidad-info .info-tel, .unidad-info .info-correo{
+  display: block;
+  text-align: center;
+}
+.unidad-info .info-correo{
+  color: rgb(51, 135, 195);
+}
 /* Mapa
 ----------------------------------------------------------------------------------------------------*/
 ul#mapa { 
@@ -651,12 +713,11 @@ ul#mapa li a:hover .offset, ul#mapa li a:focus .offset, ul#mapa li a:active .off
   color : #000;
   background-image : none;
   background-color : #ffffde;
-  border : 1px solid #000;
   display : block;
-  width : 250px;
+  width: 307px;
   height : auto;
   text-decoration : none;
-  cursor : auto;
+  cursor: default;
 }
 
 
@@ -666,22 +727,22 @@ ul#mapa li a:hover .offset, ul#mapa li a:focus .offset, ul#mapa li a:active .off
 
 ul#mapa li a#cmp01 {
   width: 20px;
-	height: 21px;
+  height: 21px;
   margin-top : 0;
   margin-left : 0px;
-	background : transparent url(../images/unidades-estados.png) no-repeat 1px -4px;
+  background : transparent url(../images/unidades-estados.png) no-repeat 1px -4px;
 	
-	-webkit-transition: opacity .2s ease-in-out;
-	-moz-transition: opacity .2s ease-in-out;
-	-ms-transition: opacity .2s ease-in-out;
-	-o-transition: opacity .2s ease-in-out;
-	transition: opacity .2s ease-in-out;
-	filter: alpha(opacity=0);
+  -webkit-transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -ms-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  filter: alpha(opacity=0);
   opacity: 0;
 	
-	position: relative;
-	left: 242px;
-	top: 228px;
+  position: relative;
+  left: 242px;
+  top: 228px;
 }
 
 ul#mapa li a#cmp01:hover, ul#mapa li a#cmp01:focus, ul#mapa li a#cmp01:active {
@@ -694,7 +755,7 @@ ul#mapa li a#cmp01:hover .offset, ul#mapa li a#cmp01:focus .offset, ul#mapa li a
   margin-left : 0px;
 	background: #FFFFFF;
 	position: relative;
-	left: -610px;
+	left: -602px;
 	top: -120px;	
 }
 
@@ -730,7 +791,7 @@ ul#mapa li a#cmp02:hover .offset, ul#mapa li a#cmp02:focus .offset, ul#mapa li a
   margin-left : 0px;
 	background: #FFFFFF;
 	position: relative;
-	left: -656px;
+	left: -645px;
 	top: -163px;
 }
 
@@ -766,7 +827,7 @@ ul#mapa li a#cmp03:hover .offset, ul#mapa li a#cmp03:focus .offset, ul#mapa li a
   margin-left : 0px;
 	background: #FFFFFF;
 	position: relative;
-	left: -669px;
+	left: -659px;
 	top: -141px;
 }
 
@@ -803,7 +864,7 @@ ul#mapa li a#cmp04:hover .offset, ul#mapa li a#cmp04:focus .offset, ul#mapa li a
   margin-left : 0px;
 	background: #FFFFFF;
 	position: relative;
-	left: -677px;
+	left: -667px;
 	top: -177px;
 }
 
@@ -839,7 +900,7 @@ ul#mapa li a#cmp05:hover .offset, ul#mapa li a#cmp05:focus .offset, ul#mapa li a
   margin-left : 0px;
 	background: #FFFFFF;
 	position: relative;
-	left: -655px;
+	left: -645px;
 	top: -136px;
 }
 
@@ -875,7 +936,7 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   margin-left : 0px;
 	background: #FFFFFF;
 	position: relative;
-	left: -684px;
+	left: -674px;
 	top: -152px;
 }
 
@@ -889,6 +950,12 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
 	margin-top: -91px;
 }
 .footer-content{
-    padding: 30px;
-    color: #2B3941;
+  padding: 37px 30px;
+  color: #4E6D80;
+  font-size: 14px;
+}
+.footer-content a{
+  color: #0085B2;
+  text-decoration: none;
+  float: right;
 }
