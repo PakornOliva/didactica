@@ -276,7 +276,7 @@ p{
     background: none;
 }
 
-.objetivos-contenido div a{
+.objetivos-contenido div a, .objetivos-contenido div span {
     display: block;
 }
 
