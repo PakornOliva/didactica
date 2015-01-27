@@ -1151,6 +1151,56 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   color: #374652;
 }
 
+/* Sitios Unidades
+----------------------------------------------------------------------------------------------------*/
+.sitio-ags{
+	margin-top: 80px;
+}
+.sitio-ags .sitio-titulo{
+	background: transparent url(../images/sitios-unidades-titulos.png) no-repeat;
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.sitio-ags .sitio-titulo .sitio-titulo-ags{
+	background-position: 0px 0px;
+	width: 356px;
+	height: 86px;
+}
+
+.sitio-toluca{
+	margin-top: 80px;
+}
+.sitio-toluca .sitio-toluca{
+	background: transparent url(../images/sitios-unidades-titulos.png) no-repeat;
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.sitio-toluca .sitio-titulo .sitio-titulo-toluca{
+	background-position: 0px -90px;
+	width: 205px;
+	height: 86px;
+}
+
+.sitio-hidalgo{
+	margin-top: 80px;
+}
+.sitio-hidalgo .sitio-hidalgo{
+	background: transparent url(../images/sitios-unidades-titulos.png) no-repeat;
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.sitio-hidalgo .sitio-titulo .sitio-titulo-hidalgo{
+	background-position: 0px -180px;
+	width: 205px;
+	height: 86px;
+}
+
 /* Footer
 ----------------------------------------------------------------------------------------------------*/
 .footer{
@@ -1169,4 +1219,33 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   color: #0085B2;
   text-decoration: none;
   float: right;
+}
+
+/* Background Modular
+----------------------------------------------------------------------------------------------------*/
+
+.bg_12{
+	width: auto;	
+}
+.bg_12 .header-bg_12{
+  background: transparent url(../images/bg-contenido-maxw.png) no-repeat 4px 0px;
+  display: block;
+  height: 50px;
+	float: left;
+	width: 100%;
+}
+.bg_12 .body-bg_12{
+  background: #FFFFFF;
+	display: block;
+  min-height:  250px;
+  width: 944px;
+  float: left;
+	margin: 0 0px 0 8px;
+}
+.bg_12 .footer-bg_12{
+	background: transparent url(../images/bg-contenido-maxw.png) no-repeat 4px -60px;
+	display: block;
+	height: 50px;
+	float: left;
+	width: 100%;
 }
