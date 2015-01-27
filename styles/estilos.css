@@ -83,7 +83,7 @@ div{
 	height: 20px;
 	background-position: 0px 0px;
 }
-.menu li .menu-item1:hover{
+.menu li .menu-item1:hover, .menu li .menu-item1.active{
 	background-position: 0px -33px;
 }
 .menu li .menu-item2{
@@ -938,6 +938,217 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
 	position: relative;
 	left: -674px;
 	top: -152px;
+}
+
+/* OBJETIVOS SECCION
+----------------------------------------------------------------------------------------------------*/
+.objetivos{
+  margin-top: 40px;
+}
+.objetivos .objetivos-titulo{
+  background: transparent url(../images/objetivos-pagina.png) no-repeat 80px 0px;
+  display: block;
+  height: 110px;
+}
+
+.objetivos-menu-top li{
+  display: inline-block;
+  width: 30%;
+  margin-left: 0;
+  background: transparent url(../images/objetivos-titulos-div2.png) no-repeat top left;
+}
+.objetivos-menu-top li:first-child{
+  background: none;
+}
+
+.objetivos-menu-top li a{
+  margin: auto;
+
+}
+
+.objetivos-menu-top .item-aprendizaje a{
+  background: transparent url(../images/objetivos-pagina.png) no-repeat 0px -161px;
+  display: block;
+  width: 134px;
+  height: 105px;
+}
+
+.objetivos-menu-top .item-aprendizaje a:hover, .objetivos-menu-top .item-aprendizaje a.active{
+  background-position: 0px -284px;
+}
+
+.objetivos-menu-top .item-diversion a{
+  background: transparent url(../images/objetivos-pagina.png) no-repeat -166px -161px;
+  display: block;
+  width: 102px;
+  height: 105px;
+}
+
+.objetivos-menu-top .item-diversion a:hover, .objetivos-menu-top .item-diversion a.active{
+  background-position: -166px -284px;
+}
+
+.objetivos-menu-top .item-seguridad a{
+  background: transparent url(../images/objetivos-pagina.png) no-repeat -304px -161px;
+  display: block;
+  width: 108px;
+  height: 105px;
+}
+
+.objetivos-menu-top .item-seguridad a:hover, .objetivos-menu-top .item-seguridad a.active{
+  background-position: -304px -284px;
+}
+
+.objetivos .objetivos-container{
+  margin-top: 20px;
+}
+.objetivos-container .objetivo-banner-aprendizaje{
+  background: transparent url(../images/banner-aprendizaje.png) no-repeat;
+  display: block;
+  width: 289px;
+  height: 377px;
+}
+.objetivo-contenido .header-contenido{
+  background: transparent url(../images/bg-contenido-objetivos.png) no-repeat 13px 0px;
+  display: block;
+  height: 50px;
+}
+.objetivo-contenido .footer-contenido{
+  background: transparent url(../images/bg-contenido-objetivos.png) no-repeat 13px -60px;
+  display: block;
+  height: 50px;
+  margin-bottom: 80px;
+}
+.objetivo-contenido .body-contenido{
+  background: #FFFFFF;
+  display: block;
+  min-height:  250px;
+  width: 584px;
+  margin: auto;
+}
+.objetivo-contenido .body-contenido .grid_6{
+  float: none;
+  display: inline-block;
+}
+
+.objetivo-contenido .info-tit-aprendizaje{
+  background: transparent url(../images/objetivos-pagina.png) no-repeat -314px 0px;
+  width: 172px;
+  height: 36px;
+}
+.objetivo-contenido .info-tit-diversion{
+  background: transparent url(../images/objetivos-pagina.png) no-repeat -314px -50px;
+  width: 172px;
+  height: 36px;
+}
+.objetivo-contenido .info-tit-seguridad{
+  background: transparent url(../images/objetivos-pagina.png) no-repeat -314px -100px;
+  width: 172px;
+  height: 36px;
+}
+.objetivo-info p, .objetivo-info ul li{
+  color: #374652;
+  font-size: 14px;
+}
+.objetivo-info p:first-child{
+  margin-top: 20px;
+}
+.objetivo-info li{
+  list-style: disc;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.tabs {
+  position: relative;   
+  min-height:250px; /* This part sucks */
+  clear: both;
+  margin: 0;
+}
+.tab {
+  float: left;
+  width: 25%;
+}
+.tab li{
+  font-size: 13px !important;
+  line-height: normal;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+  font-size: 13px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  color: #374652;
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+/* Aviso Privacidad
+----------------------------------------------------------------------------------------------------*/
+.politica-priv{
+  margin-top:100px;
+}
+.politica-priv-titulo{
+  background: transparent url(../images/titulo-aviso-privacidad-.png) no-repeat 4px 0px;
+  display: block;
+  height: 164px;
+  width: 379px;
+  position: absolute;
+  top: -100px;
+  right: 15px;
+}
+.politica-priv .header-contenido{
+  background: transparent url(../images/bg-contenido-maxw.png) no-repeat 4px 0px;
+  display: block;
+  height: 50px;
+}
+.politica-priv .footer-contenido{
+  background: transparent url(../images/bg-contenido-maxw.png) no-repeat 4px -60px;
+  display: block;
+  height: 50px;
+  margin-bottom: 80px;
+}
+.politica-priv .body-contenido{
+  background: #FFFFFF;
+  display: block;
+  min-height:  250px;
+  width: 944px;
+  margin: auto;
+}
+.politica-priv p{
+  color: #374652;
+}
+.politica-priv .aviso-1, .politica-priv .aviso-2{
+  padding: 40px;
+}
+.politica-priv h5{
+  color: #374652;
 }
 
 /* Footer
