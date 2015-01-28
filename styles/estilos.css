@@ -1,6 +1,73 @@
 @charset "iso-8859-2";
 /* CSS Document */
 
+/* Fuentes
+----------------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fuentes/opensans-semibold-webfont.eot');
+    src: url('../fuentes/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fuentes/opensans-semibold-webfont.woff') format('woff'),
+         url('../fuentes/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../fuentes/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fuentes/opensans-regular-webfont.eot');
+    src: url('../fuentes/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fuentes/opensans-regular-webfont.woff') format('woff'),
+         url('../fuentes/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fuentes/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('opensans-italic-webfont.eot');
+    src: url('opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-italic-webfont.woff2') format('woff2'),
+         url('opensans-italic-webfont.woff') format('woff'),
+         url('opensans-italic-webfont.ttf') format('truetype'),
+         url('opensans-italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fuentes/opensans-bold-webfont.eot');
+    src: url('../fuentes/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fuentes/opensans-bold-webfont.woff') format('woff'),
+         url('../fuentes/opensans-bold-webfont.ttf') format('truetype'),
+         url('../fuentes/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'you_are_lovedregular';
+    src: url('../fuentes/you_are_loved-webfont.eot');
+    src: url('../fuentes/you_are_loved-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fuentes/you_are_loved-webfont.woff2') format('woff2'),
+         url('../fuentes/you_are_loved-webfont.woff') format('woff'),
+         url('../fuentes/you_are_loved-webfont.ttf') format('truetype'),
+         url('../fuentes/you_are_loved-webfont.svg#you_are_lovedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /* Estilos Generales
 ----------------------------------------------------------------------------------------------------*/
 body{
@@ -55,15 +122,6 @@ div{
 	float: right;
 }
 
-.menu-prov{
-	height: 22px;
-	width: 542px;
-	background: transparent url(../images/menu-provisional.png) no-repeat;
-	display: block;
-	margin-top: 15px;
-	margin-left: 40px;
-}
-
 .menu ul{
 	margin-top: 15px;
 }
@@ -72,11 +130,20 @@ div{
 	margin-left: 25px;
 }
 .menu li a{
-	display: block;
-	background: transparent url(../images/menu.png) no-repeat;
+  display: block;
+  font-family: 'you_are_lovedregular';
+  font-size: 18px;
+  color: #0772BE;
+  text-decoration: none;
+  
+  	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
 }
 .menu li:first-child{
-		margin-left: 35px;
+		margin-left: 45px;
 }
 .menu li .menu-item1{
 	width: 40px;
@@ -84,39 +151,39 @@ div{
 	background-position: 0px 0px;
 }
 .menu li .menu-item1:hover, .menu li .menu-item1.active{
-	background-position: 0px -33px;
+	color: #6CAA21;
 }
 .menu li .menu-item2{
-	width: 120px;
+	width: 145px;
 	height: 23px;
 	background-position: -69px 0px;
 }
-.menu li .menu-item2:hover{
-	background-position: -69px -35px;
+.menu li .menu-item2:hover, .menu li .menu-item2.active{
+	color: #6CAA21;
 }
 .menu li .menu-item3{
-	width: 144px;
+	width: 80px;
 	height: 23px;
 	background-position: -212px 0px;
 }
-.menu li .menu-item3:hover{
-	background-position: -212px -35px;
+.menu li .menu-item3:hover, .menu li .menu-item3.active{
+	color: #6CAA21;
 }
 .menu li .menu-item4{
-	width: 53px;
+	width: 65px;
 	height: 23px;
 	background-position: -385px 0px;
 }
-.menu li .menu-item4:hover{
-	background-position: -385px -35px;
+.menu li .menu-item4:hover, .menu li .menu-item4.active{
+	color: #6CAA21;
 }
 .menu li .menu-item5{
 	width: 72px;
 	height: 23px;
 	background-position: -471px 0px;
 }
-.menu li .menu-item5:hover{
-	background-position: -471px -35px;
+.menu li .menu-item5:hover, .menu li .menu-item5.active{
+	color: #6CAA21;
 }
 
 .main-content{
@@ -126,8 +193,7 @@ div{
 p{
 	color: #FFFFFF;
 	line-height: normal;
-    font-size: 14px;
-    
+    font-size: 16px;    
 }
 
 /* Botones
@@ -195,7 +261,7 @@ p{
 }
 
 .inicio-contenido{
-	min-height: 680px;
+	min-height: 780px;
 }
 
 .inicio-banner-images{
@@ -221,7 +287,7 @@ p{
 }
 
 .inicio-banner-sup-der >div p{
-	padding: 10px 50px;
+	padding: 12px 50px;
 	color: #2B3941;
 	text-align: center;
 	font-size: 16px;
@@ -231,13 +297,13 @@ p{
     width: 400px;
     height: 248px;
     position: absolute;
-    top: 530px;
+    top: 500px;
     right: -10px;
 }
 
 .inicio-objetivos{
 	position: absolute;
-	top: 333px;
+	top: 380px;
 	left: 0px;
 	width: 585px;
 	height: 280px;
@@ -257,7 +323,7 @@ p{
 	position: absolute;
 	z-index: 1;
 	right: -40px;
-	top: -60px;
+	top: -110px;
 }
 
 .objetivos-contenido{
@@ -412,6 +478,9 @@ p{
 	width: 217px;
 	height: 40px;
     margin-bottom: 10px;
+}
+.inicio-respons-contenido h5, .inicio-respons-contenido h6{
+  color: #FFFFFF;
 }
 .inicio-respons-contenido a{
     margin-left: auto;
@@ -950,7 +1019,9 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   display: block;
   height: 110px;
 }
-
+.objetivos-menu-top ul{
+  padding-left: 50px;
+}
 .objetivos-menu-top li{
   display: inline-block;
   width: 30%;
@@ -1008,6 +1079,18 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   width: 289px;
   height: 377px;
 }
+.objetivos-container .objetivo-banner-seguridad{
+  background: transparent url(../images/banner-seguridad.png) no-repeat;
+  display: block;
+  width: 289px;
+  height: 377px;
+}
+.objetivos-container .objetivo-banner-diversion{
+  background: transparent url(../images/banner-diversion.png) no-repeat;
+  display: block;
+  width: 289px;
+  height: 377px;
+}
 .objetivo-contenido .header-contenido{
   background: transparent url(../images/bg-contenido-objetivos.png) no-repeat 13px 0px;
   display: block;
@@ -1022,7 +1105,7 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
 .objetivo-contenido .body-contenido{
   background: #FFFFFF;
   display: block;
-  min-height:  250px;
+  min-height:  230px;
   width: 584px;
   margin: auto;
 }
@@ -1046,6 +1129,15 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   width: 172px;
   height: 36px;
 }
+.objetivo-info{
+  width: 480px;
+  float: left;
+  margin-left: 50px;
+}
+.objetivo-info.info-seguridad{
+  float: none;
+}
+
 .objetivo-info p, .objetivo-info ul li{
   color: #374652;
   font-size: 14px;
@@ -1172,14 +1264,14 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
 .sitio-toluca{
 	margin-top: 80px;
 }
-.sitio-toluca .sitio-toluca{
-	background: transparent url(../images/sitios-unidades-titulos.png) no-repeat;
-	display: block;
+.sitio-toluca .sitio-titulo{
 	position: absolute;
 	right: 0px;
 	top: 0px;
 }
 .sitio-toluca .sitio-titulo .sitio-titulo-toluca{
+    background: transparent url(../images/sitios-unidades-titulos.png) no-repeat;
+	display: block;
 	background-position: 0px -90px;
 	width: 205px;
 	height: 86px;
@@ -1188,15 +1280,63 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
 .sitio-hidalgo{
 	margin-top: 80px;
 }
-.sitio-hidalgo .sitio-hidalgo{
-	background: transparent url(../images/sitios-unidades-titulos.png) no-repeat;
-	display: block;
+.sitio-hidalgo .sitio-titulo{
 	position: absolute;
 	right: 0px;
 	top: 0px;
 }
 .sitio-hidalgo .sitio-titulo .sitio-titulo-hidalgo{
+  	background: transparent url(../images/sitios-unidades-titulos.png) no-repeat;
+	display: block;
 	background-position: 0px -180px;
+	width: 205px;
+	height: 86px;
+}
+
+.sitio-df{
+	margin-top: 80px;
+}
+.sitio-df .sitio-titulo{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.sitio-df .sitio-titulo .sitio-titulo-df{
+  	background: transparent url(../images/sitios-unidades-titulos.png) no-repeat;
+	display: block;
+	background-position: 0px -270px;
+	width: 355px;
+	height: 86px;
+}
+
+.sitio-queretaro{
+	margin-top: 80px;
+}
+.sitio-queretaro .sitio-titulo{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.sitio-queretaro .sitio-titulo .sitio-titulo-queretaro{
+  	background: transparent url(../images/sitios-unidades-titulos.png) no-repeat;
+	display: block;
+	background-position: 0px -360px;
+	width: 235px;
+	height: 86px;
+}
+
+.sitio-puebla{
+	margin-top: 80px;
+}
+.sitio-puebla .sitio-titulo{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.sitio-puebla .sitio-titulo .sitio-titulo-puebla{
+  	background: transparent url(../images/sitios-unidades-titulos.png) no-repeat;
+	display: block;
+	background-position: 0px -450px;
 	width: 205px;
 	height: 86px;
 }
@@ -1225,14 +1365,15 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
 ----------------------------------------------------------------------------------------------------*/
 
 .bg_12{
-	width: auto;	
+  width: auto;
+  display: inline-block;
 }
 .bg_12 .header-bg_12{
   background: transparent url(../images/bg-contenido-maxw.png) no-repeat 4px 0px;
   display: block;
   height: 50px;
-	float: left;
-	width: 100%;
+  float: left;
+  width: 100%;
 }
 .bg_12 .body-bg_12{
   background: #FFFFFF;
@@ -1249,3 +1390,4 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
 	float: left;
 	width: 100%;
 }
+
