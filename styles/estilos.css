@@ -197,6 +197,7 @@ a:hover{
 
 .main-content{
 	position: relative;
+    margin-bottom: 20px;
 }
 
 p{
@@ -440,45 +441,6 @@ p{
 	opacity: .8;
 }
 
-.inicio-destinos{
-	position: relative;
-	margin-bottom: 15px
-}
-
-.destinos-titulo{
-	background: transparent url(../images/inicio-titulos.png) no-repeat 0 -134px;
-	width: 268px;
-	height: 27px;
-	display: block;
-}
-
-.destinos-maletas{
-	background: transparent url(../images/inicio-destinos-maletas.png) no-repeat;
-	width: 199px;
-	height: 173px;
-	float: left;
-}
-
-.destinos-contenido{
-	float: left;
-	width: 330px;
-}
-.destinos-contenido p{
-	margin-top: 10px;
-}
-.destinos-contenido p strong{
-	font-size: 16px;
-}
-
-.destinos-contenido span{
-	font-size: 18px;
-	color: #FFFFFF;
-	line-height: normal;
-}
-.btn-destinos{
-	margin-left: 70px;
-	margin-top: 20px;
-}
 .inicio-respons-contenido, .inicio-experiencia-contenido, .inicio-padres-contenido{
 	min-height: 190px;
 }
@@ -1337,6 +1299,86 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
 	height: 86px;
 }
 
+/* Destinos
+----------------------------------------------------------------------------------------------------*/
+.destinos{
+  margin-top: 40px;
+}
+.destinos p{
+  color: #374652;
+}
+.titulo-destinos{
+  background: transparent url(../images/destinos-titulos.png) no-repeat;
+  display: block;
+  background-position: 0px 0px;
+  width: 260px;
+  height: 102px;
+  position: absolute;
+  left: 200px;
+  top: 50px
+}
+.destinos-nac .container-nac{
+  background: transparent url(../images/destinos-bg1.png) no-repeat;
+  display: block;
+  width: 642px;
+  height: 521px;
+}
+.destinos-nac .fotos-nac{
+  background: transparent url(../images/destinos-fotos1.png) no-repeat;
+  display: block;
+  width: 289px;
+  height: 377px;
+  position: absolute;
+  right: 60px;
+  top: 50px;
+}
+.destinos-nac .content-nac{
+  position: relative;
+  top: 150px;
+  left: 55px;
+  width: 588px;
+  padding: 25px 50px;
+}
+.destinos-nac .titulo-nac{
+  background: transparent url(../images/destinos-titulos.png) no-repeat;
+  display: block;
+  width: 210px;
+  height: 34px;
+  background-position: -274px 0px;
+}
+
+.destinos-intern .container-intern{
+  background: transparent url(../images/destinos-bg2.png) no-repeat;
+  display: block;
+  width: 679px;
+  height: 517px;
+  position: relative;
+  float: right;
+  margin-top: -100px;
+}
+.destinos-intern .fotos-intern{
+  background: transparent url(../images/destinos-fotos2.png) no-repeat;
+  display: block;
+  width: 289px;
+  height: 377px;
+  position: relative;
+  left: 15px;
+  top: 30px;
+}
+.destinos-intern .content-intern{
+  position: relative;
+  top: 100px;
+  left: 0px;
+  width: 588px;
+  padding: 25px 50px;
+}
+.destinos-intern .titulo-intern{
+  background: transparent url(../images/destinos-titulos.png) no-repeat;
+  display: block;
+  width: 260px;
+  height: 34px;
+  background-position: -274px -50px;
+}
 /* Footer
 ----------------------------------------------------------------------------------------------------*/
 .footer{
@@ -1348,13 +1390,16 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
 }
 .footer-content{
   padding: 37px 30px;
-  color: #4E6D80;
-  font-size: 14px;
+  color: #FFFFFF;
+  font-size: 13px;
 }
 .footer-content a{
-  color: #0085B2;
+  color: #FFFFFF;
   text-decoration: none;
   float: right;
+}
+.footer-content a:hover{
+  color: #ACDEFD;
 }
 
 /* Background Modular
@@ -1385,5 +1430,17 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
 	height: 50px;
 	float: left;
 	width: 100%;
+}
+.navlist{
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.navlist li{
+  padding-left: 15px;
+  background: transparent url(../images/vineta-circulo.png) no-repeat 0px 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 

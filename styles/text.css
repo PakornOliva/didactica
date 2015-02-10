@@ -62,14 +62,17 @@ h6 {
 
 ol {
 	list-style: decimal;
+  color: #374652;
 }
 
 ul {
 	list-style: square;
+  color: #374652;
 }
 
 li {
 	margin-left: 30px;
+  color: #374652;
 }
 
 p,
