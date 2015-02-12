@@ -1379,6 +1379,27 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   height: 34px;
   background-position: -274px -50px;
 }
+
+/* Por que Elegirnos?
+----------------------------------------------------------------------------------------------------*/
+.elegirnos{
+  margin-top: 40px;
+}
+.titulo-elegirnos{
+  background: transparent url(../images/eleg-titulos.png) no-repeat;
+  display: block;
+  width: 285px;
+  height: 83px;
+  background-position: 0px 0px;
+  float: right;
+}
+.linea-div{
+  background: transparent url(../images/linea-div.png) no-repeat;
+  display: block;
+  width: 940px;
+  height: 20px;
+  clear: both;
+}
 /* Footer
 ----------------------------------------------------------------------------------------------------*/
 .footer{
