@@ -1400,6 +1400,49 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   height: 20px;
   clear: both;
 }
+#ReponsabSeccion{
+  margin-bottom: 50px;
+}
+.elegirnos .reponsab-contenido{
+  background: transparent url(../images/eleg-notepreocupes-bg.png) no-repeat;
+  display: block;
+  width: 593px;
+  height: 381px;
+  margin-top: 170px;
+  padding: 40px 40px;
+}
+.reponsab-contenido h5{
+  color: #FFFFFF;
+  font-weight: 100;
+  line-height: 20px;
+}
+.elegirnos .reponsab-foto{
+  background: transparent url(../images/eleg-notepreocupes-banner-izq.png) no-repeat;
+  display: block;
+  width: 477px;
+  height: 400px;
+  position: absolute;
+  bottom: 180px;
+  right: 10px;
+}
+.elegirnos .responsab-titulo{
+  background: transparent url(../images/eleg-titulos.png) no-repeat -313px -204px;
+  display: block;
+  width: 260px;
+  height: 130px;
+  position: relative;
+  left: 90px;
+  top: 42px;
+}
+.elegirnos .responsab-formula{
+  background: transparent url(../images/eleg-notepreocupes-banner-izq-exp.png) no-repeat;
+  display: block;
+  width: 308px;
+  height: 217px;
+  position: absolute;
+  left: 160px;
+  bottom: -190px;
+}
 /* Footer
 ----------------------------------------------------------------------------------------------------*/
 .footer{
