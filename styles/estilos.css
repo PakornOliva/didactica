@@ -1401,7 +1401,7 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   clear: both;
 }
 #ReponsabSeccion{
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .elegirnos .reponsab-contenido{
   background: transparent url(../images/eleg-notepreocupes-bg.png) no-repeat;
@@ -1422,7 +1422,7 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   width: 477px;
   height: 400px;
   position: absolute;
-  bottom: 180px;
+  top: 115px;
   right: 10px;
 }
 .elegirnos .responsab-titulo{
@@ -1443,6 +1443,98 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   left: 160px;
   bottom: -190px;
 }
+
+#NuestraExp{
+  margin-top: 50px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.elegirnos .exp-container{
+  width: 580px;
+position: relative;
+}
+.exp-container .exp-titulo{
+  background: transparent url(../images/eleg-titulos.png) no-repeat -6px -106px;
+  display: block;
+  width: 270px;
+  height: 40px;
+}
+.exp-container .exp-contenido{
+  background: transparent url(../images/eleg-experiencia-bg.png) no-repeat;
+  display: block;
+  width: 341px;
+  height: 216px;
+  padding: 30px;
+}
+.exp-container ul li{
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.exp-container .exp-coord{
+  background: transparent url(../images/eleg-experiencia-img-chica.png) no-repeat;
+  display: block;
+  width: 165px;
+  height: 243px;
+  position: absolute;
+top: 80px;
+right: 0;
+}
+.exp-container .exp-fotos{
+  background: transparent url(../images/eleg-experiencia-img2.png) no-repeat;
+  display: block;
+  width: 538px;
+  height: 235px;
+  position: relative;
+left: 50px;
+margin-top: 15px;
+}
+.organizar-container{
+  position: absolute;
+top: 0px;
+right: 0;
+}
+.organizar-container .organizar-foto{
+  background: transparent url(../images/eleg-experiencia-img1.png) no-repeat;
+  display: block;
+  width: 283px;
+  height: 197px;
+}
+.organizar-container .organizar-titulo{
+  background: transparent url(../images/eleg-titulos.png) no-repeat -4px -169px;
+  display: block;
+  width: 267px;
+  height: 69px;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+.organizar-container .organizar-contenido{
+  background: transparent url(../images/eleg-experiencia-bg.png) no-repeat;
+  display: block;
+  width: 341px;
+  height: 216px;
+  padding: 25px 45px;
+  color: #FFFFFF;
+}
+.organizar-contenido div{
+  height: 40px;
+  background: transparent url(../images/eleg-organizar-lineas-div.png) no-repeat bottom center;
+  display: block;
+  width: 100%;
+  padding-top: 7px;
+}
+.organizar-contenido .org-pto1{
+  padding: 0;
+  height: 45px;
+}
+.organizar-contenido span{
+  height: 30px;
+  float: left;
+  margin-right: 3px;
+  font-weight: 600;
+  color: #A5DD21;
+}
+
+
 /* Footer
 ----------------------------------------------------------------------------------------------------*/
 .footer{
