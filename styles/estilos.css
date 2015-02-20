@@ -1489,7 +1489,7 @@ left: 50px;
 margin-top: 15px;
 }
 .organizar-container{
-  position: absolute;
+position: absolute;
 top: 0px;
 right: 0;
 }
@@ -1534,6 +1534,48 @@ right: 0;
   color: #A5DD21;
 }
 
+#PadresRedes{
+	margin-top: 50px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.padres-redes-col1{
+	
+}
+
+.padres-redes-titulo{
+	background: transparent url(../images/eleg-titulos.png) no-repeat -314px -15px;
+  display: block;
+  width: 249px;
+  height: 189px;
+}
+
+.padres-redes-links{
+	
+}
+
+.padres-redes-col2{
+	
+}
+
+.redes-image{
+	background: transparent url(../images/redes-image.png) no-repeat;
+  display: block;
+  width: 336px;
+  height: 427px;
+}
+
+.padres-redes-col3{
+	
+}
+
+.padres-redes-contenido{
+	background: transparent url(../images/redes-bg.png) no-repeat;
+  display: block;
+  width: 378px;
+  height: 371px;
+}
 
 /* Footer
 ----------------------------------------------------------------------------------------------------*/
