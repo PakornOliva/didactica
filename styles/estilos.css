@@ -1120,29 +1120,34 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   margin-top: 20px;
 }
 .objetivo-info li{
-  list-style: disc;
   line-height: normal;
   margin-left: 20px;
 }
 
 .tabs {
   position: relative;   
-  min-height:250px; /* This part sucks */
+  min-height: 260px; /* This part sucks */
   clear: both;
   margin: 0;
 }
 .tab {
   float: left;
-  width: 25%;
+  width: 23%;
+  margin-left: 2.5%;
+}
+.tab:first-child {
+  margin-left: 0;
 }
 .tab li{
   font-size: 13px !important;
   line-height: normal;
 }
 .tab label {
-  background: #eee; 
+  background: #197DBB;
+border-radius: 30px;
+color: #FFFFFF; 
   padding: 10px; 
-  border: 1px solid #ccc; 
+ 
   margin-left: -1px; 
   position: relative;
   left: 1px; 
@@ -1151,24 +1156,29 @@ ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a
   text-align: center;
   cursor: pointer;
 }
+.tab label:hover{
+  background: rgb(9, 84, 151);
+}
 .tab [type=radio] {
   display: none;   
 }
 .content {
   position: absolute;
-  top: 46px;
+  top: 48px;
   left: 0;
   background: white;
   right: 0;
   bottom: 0;
   padding: 20px;
-  border: 1px solid #ccc;
+
   font-size: 13px;
   color: #374652;
 }
+.content .navlist{
+  margin-top: 10px;
+}
 [type=radio]:checked ~ label {
-  background: white;
-  border-bottom: 1px solid white;
+  background: rgb(9, 84, 151);
   z-index: 2;
 }
 [type=radio]:checked ~ label ~ .content {
