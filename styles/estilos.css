@@ -760,7 +760,7 @@ ul#mapa li a:hover .offset, ul#mapa li a:focus .offset, ul#mapa li a:active .off
   width: 307px;
   height : auto;
   text-decoration : none;
-  cursor: default;
+  cursor: default;	
 }
 
 
@@ -791,6 +791,9 @@ ul#mapa li a#cmp01 {
 ul#mapa li a#cmp01:hover, ul#mapa li a#cmp01:focus, ul#mapa li a#cmp01:active {
 	filter: alpha(opacity=100);
   opacity: 1;
+}
+ul#mapa li a#cmp01:hover{
+	z-index: 100;
 }
 
 ul#mapa li a#cmp01:hover .offset, ul#mapa li a#cmp01:focus .offset, ul#mapa li a#cmp01:active .offset {
@@ -828,7 +831,9 @@ ul#mapa li a#cmp02:hover, ul#mapa li a#cmp02:focus, ul#mapa li a#cmp02:active {
 	filter: alpha(opacity=100);
   opacity: 1;
 }
-
+ul#mapa li a#cmp02:hover{
+	z-index: 100;
+}
 ul#mapa li a#cmp02:hover .offset, ul#mapa li a#cmp02:focus .offset, ul#mapa li a#cmp02:active .offset {
   margin-top : 0px;
   margin-left : 0px;
@@ -864,7 +869,9 @@ ul#mapa li a#cmp03:hover, ul#mapa li a#cmp03:focus, ul#mapa li a#cmp03:active {
 	filter: alpha(opacity=100);
   opacity: 1;
 }
-
+ul#mapa li a#cmp03:hover{
+	z-index: 100;
+}
 ul#mapa li a#cmp03:hover .offset, ul#mapa li a#cmp03:focus .offset, ul#mapa li a#cmp03:active .offset {
   margin-top : 0px;
   margin-left : 0px;
@@ -901,7 +908,9 @@ ul#mapa li a#cmp04:hover, ul#mapa li a#cmp04:focus, ul#mapa li a#cmp04:active {
 	filter: alpha(opacity=100);
   opacity: 1;
 }
-
+ul#mapa li a#cmp04:hover{
+	z-index: 100;
+}
 ul#mapa li a#cmp04:hover .offset, ul#mapa li a#cmp04:focus .offset, ul#mapa li a#cmp04:active .offset {
   margin-top : 0px;
   margin-left : 0px;
@@ -937,7 +946,9 @@ ul#mapa li a#cmp05:hover, ul#mapa li a#cmp05:focus, ul#mapa li a#cmp05:active {
 	filter: alpha(opacity=100);
   opacity: 1;
 }
-
+ul#mapa li a#cmp05:hover{
+	z-index: 100;
+}
 ul#mapa li a#cmp05:hover .offset, ul#mapa li a#cmp05:focus .offset, ul#mapa li a#cmp05:active .offset {
   margin-top : 0px;
   margin-left : 0px;
@@ -973,7 +984,9 @@ ul#mapa li a#cmp06:hover, ul#mapa li a#cmp06:focus, ul#mapa li a#cmp06:active {
 	filter: alpha(opacity=100);
   opacity: 1;
 }
-
+ul#mapa li a#cmp06:hover{
+	z-index: 100;
+}
 ul#mapa li a#cmp06:hover .offset, ul#mapa li a#cmp06:focus .offset, ul#mapa li a#cmp06:active .offset {
   margin-top : 0px;
   margin-left : 0px;
