@@ -111,7 +111,7 @@ a:hover{
 	background-position: center top;
 	height: auto;
 	min-height:100%;
-	padding-bottom: 91px
+	padding-bottom: 110px
 }
 
 .logo{
@@ -1617,18 +1617,19 @@ right: 0;
 /* Footer
 ----------------------------------------------------------------------------------------------------*/
 .footer{
-	width: 972px;
-	height: 91px;
-	background: transparent url(../images/bg-footer.png) no-repeat;
+	width: 100%;
+	height: 110px;
+	background: transparent url(../images/bg-footer.png) repeat-x;
 	display: block;
-	margin-top: -91px;
+	margin-top: -110px;
 }
 .footer-content{
-  padding: 37px 30px;
+  padding: 50px 0px 0px;
   color: #FFFFFF;
   font-size: 13px;
+	position: relative;
 }
-.footer-content a{
+.footer-content .aviso-priv-link{
   color: #FFFFFF;
   text-decoration: none;
   float: right;
@@ -1636,6 +1637,49 @@ right: 0;
 .footer-content a:hover{
   color: #ACDEFD;
 }
+.footer-content .footer-redes-sociales{
+	position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 40px;
+}
+.footer-content .footer-redes-sociales .icon-facebook{
+	background: transparent url(../images/footer-redes-iconos.png) repeat-x;
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background-position: 0 0;
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+	filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+.icon-facebook:hover{
+	filter: alpha(opacity=100) !important;
+  opacity: 1 !important;
+}
+.footer-content .footer-redes-sociales .icon-youtube{
+	background: transparent url(../images/footer-redes-iconos.png) repeat-x;
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background-position: -39px 0;
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+	filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+.icon-youtube:hover{
+	filter: alpha(opacity=100) !important;
+  opacity: 1 !important;
+}
+
 
 /* Background Modular
 ----------------------------------------------------------------------------------------------------*/
