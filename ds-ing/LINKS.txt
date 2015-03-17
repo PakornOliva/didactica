@@ -1,0 +1,1 @@
+http://badsyntax.github.io/jquery-youtube-player/
