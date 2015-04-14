@@ -1859,6 +1859,24 @@ right: 0;
 .fieldcontainer div .rowleft, .fieldcontainer div .rowright{
 	float: none;
 }
+.contacto-contenido .contacto-unidades-titulo{
+  height: 70px;
+  width: 280px;
+  background: url(../images/contacto-sprite.png) no-repeat -402px 0px;
+  display: inline-block;
+}
+.contacto-lista li{
+	list-style: none;
+}
+.contacto-lista .contacto-info{
+	margin-left: 0;
+	color: #FFFFFF;
+}
+.contacto-lista .contacto-info span{
+	display: block;
+	font-size: 14px;
+	
+}
 
 /* Footer
 ----------------------------------------------------------------------------------------------------*/
