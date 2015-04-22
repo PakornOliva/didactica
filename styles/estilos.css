@@ -488,14 +488,27 @@ p{
     margin-top: -10px;
 }
 
-.iconos-redes span{
+.iconos-redes a{
     display: block;
     width: 47px;
     height: 47px;
     float: left;
     margin-left: 20px;
+    opacity: 1;
+      -webkit-transition-property: opacity;
+    -webkit-transition-duration: .3s;
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .3s; 
+    -o-transition-property: opacity;
+    -o-transition-duration: .3s; 
+    transition-property: opacity;	
+    transition-duration: .3s;
 }
-.iconos-redes span:first-child{
+.iconos-redes a:hover{
+
+    opacity: .8;
+}
+.iconos-redes a:first-child{
     margin-left: 85px;
 }
 .iconos-redes .icono-facebook{
@@ -506,6 +519,7 @@ p{
 }
 .iconos-redes .icono-youtube{
     background: transparent url(../images/inicio-redes-iconos.png) no-repeat -126px 0px ;
+    margin-left: 15px;
 }
 .inicio-padres-contenido .titulo{
     background: transparent url(../images/inicio-titulos.png) no-repeat -358px -10px;
@@ -1855,6 +1869,7 @@ right: 0;
 	color: #044C92;
 	font-size: 14px;
 	font-weight: bold;
+  margin-bottom: 40px;
 }
 .fieldcontainer div .rowleft, .fieldcontainer div .rowright{
 	float: none;
