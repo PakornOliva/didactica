@@ -1,0 +1,5 @@
+Remover los htmls
+http://alexcican.com/post/how-to-remove-php-html-htm-extensions-with-htaccess/
+
+Resultados GOOGLE
+https://support.google.com/webmasters/answer/35624?hl=es
