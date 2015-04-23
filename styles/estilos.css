@@ -441,14 +441,18 @@ p{
 	opacity: .8;
 }
 
+.inicio-contenido-medio{
+	
+}
+
 .inicio-respons-contenido, .inicio-experiencia-contenido, .inicio-padres-contenido{
-	min-height: 190px;
+	height: 255px;
 }
 .inicio-respons-contenido .titulo{
 	background: transparent url(../images/inicio-titulos.png) no-repeat 0 -173px;
 	width: 217px;
 	height: 40px;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 .inicio-respons-contenido h5, .inicio-respons-contenido h6{
   color: #FFFFFF;
@@ -536,6 +540,7 @@ p{
     position: relative;
     top: -10px;
     margin: auto;
+	  margin-top: 16px;
 }
 .inicio-padres-contenido a{
     margin-left: auto;
